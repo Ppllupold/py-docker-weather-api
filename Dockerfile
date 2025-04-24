@@ -1,8 +1,8 @@
 FROM python:3.11-alpine
 
-LABEL maintainer = "kotnazar2005@gmail.com"
+LABEL maintainer="kotnazar2005@gmail.com"
 
-ENV PYTHONBUFFERED 1
+ENV PYTHONUNBUFFERED 1
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
-COPY app .
+COPY . .
 
-CMD ["python", "main.py"]
+CMD ["python", "app/main.py"]
 
