@@ -1,6 +1,6 @@
 FROM python:3.11-alpine
 
-LABEL maintainer="kotnazar2005@gmail.com"
+LABEL maintainer="kotnazarr2005@gmail.com"
 
 ENV PYTHONUNBUFFERED 1
 
